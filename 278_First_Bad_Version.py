@@ -10,11 +10,7 @@ def bin_find(s,f):
     if isBadVersion(mid):
         if not isBadVersion(mid -1):
             return mid
-        if mid == f:
-            mid -= 1
         return bin_find(s,mid)
     else:
-        if mid == s:
-            mid += 1
-        return bin_find(mid,f)
+        return bin_find(mid+1,f)
 
