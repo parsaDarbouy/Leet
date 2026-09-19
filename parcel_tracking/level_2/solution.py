@@ -3,7 +3,6 @@ class Parcel:
         self.parcel_id = parcel_id
         self.events = []
 
-
 class ParcelTrackingSystem:
     def __init__(self):
         self.parcels = {}
